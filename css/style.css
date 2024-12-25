@@ -2,9 +2,212 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --mainBlack: #272727;
+}
+
+body{
+    background: #9e9ea0;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back{
+    width: 99.5%;
+    background-color: #ecedf0;
+    background-image: radial-gradient(#d6d7db 2px, transparent 1px);
+    background-size: 50px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 35px;
+    height: 120vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 72px;
+    font-size: 18px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav i{
+    color: white;
+    background-color: var(--mainBlack);
+    border-radius: 50%;
+    padding: 13px;
+    font-size: 30px;
+}
+
+.login{
+    background-color: #e1e3e6;
+    justify-self: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 12px;    
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 6px;
+}
+
+.login a{
+    padding: 0 15px;
 }
 
 
+.login button{
+    cursor: pointer;
+    color: white;
+    background-color: var(--mainBlack);
+    padding: 7px 22px;
+    border-radius: 12px;
+}
 
+a{
+    text-decoration: none;
+    color: var(--mainBlack);
+}
+main{
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item2"
+        "item1 item3 item4";
+    /* grid-template-columns: 2fr 2fr;
+    grid-template-rows: ; */
+    grid-template-columns: 632px 1fr 1fr;
+    gap: 28px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    /* margin-left: 135px; */
 
+}
+
+.item {
+    border-radius: 45px;
+    background-color: aqua;
+    padding: 30px;
+}
+
+.right{
+    height: 43vh;
+}
+
+.item1 {
+    grid-area: item1;
+    gap: 0;
+    height: 90vh;
+    background-image: url(../image/image1.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 55px;
+    color: #edecf0;
+    padding-bottom: 0;
+}
+
+.item1 h1{
+    font-size: 68px;
+}
+.item button {
+    cursor: pointer;
+    color: var(--mainBlack);
+    background-color: #e1e3e6;
+    padding: 7px 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+    width: fit-content;
+    padding: 15px 26px;
+    margin-bottom: 43px;
+    border: none;
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    i{
+        font-size: 25px;
+    }
+}
+
+.item2{
+    grid-area: item2;
+    background-color: #d7d8dc;
+    background-image: url(../image/Screenshot_2024-12-25_141931-removebg-preview.png);
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    h1{
+        font-size: 55px;   
+        font-weight: lighter;
+    }
+    p{
+        font-size: 13px;
+    }
+    i{
+        transform: rotate(315deg);
+        font-size: 40px;   
+    }
+}
+
+.item3{
+    grid-area: item3;
+    background-color: #b386fd;
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    color: white;
+    h1{
+        font-size: 55px;   
+        font-weight: lighter;
+    }
+    i{
+        color: white;
+    }
+}
+.item4{
+    grid-area: item4;
+    background-color: #b1f040;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    h1{
+        font-size: 55px;   
+        font-weight: lighter;
+    }
+}
+.start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    p{
+        font-size: 13px;
+    }
+    i{
+        transform: rotate(315deg);
+        font-size: 40px;   
+    }
+}
+.item2 .start{
+    gap: 378px;
+}
